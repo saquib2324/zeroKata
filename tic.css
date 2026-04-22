@@ -1,53 +1,95 @@
-*{
-    margin:0%;
-    padding : 0%;
-    cursor:default;
-
-
-}
 body{
-background-color : rgb(205, 175, 175);
+background-color:#118ab2;
+
+color:black;
 text-align:center;
-}
 
+
+}
 .container{
-    heigt:70vh;
+height:70vh;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
 
- display:flex;
+
+}
+
+h1{
+    text-align:center;
+    color:#b0c4b1; /* Mistake: color code needs # before hex value */
+}
+
+.btn{
+ height: 18vmin;
+ width:  18vmin;
    
-    justify-content:center; 
-    gap: 1.5vmin;   
+    color:#ad2831;
+   display:flex; /* Mistake: flexbox is not a valid display value, use flex */
+   
+   
+
+       border-radius:1rem;
+       border:none;
+       box-shadow:black;
+       font-size:8vmin;
+
 
 }
-.game{
+.boxes{
 
-    height:60vmin;
-    width:60vmin;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center; 
-    gap: 1.5vmin;   
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:1.5vmin;
+
+height:60vmin;
+width:60vmin;
+
+
+
+
 }
 
-.box{
-    height:18vmin;
-    width:18vmin;
+.reset{
+
+    background-color:white;
+    color:blue;
+height: 40px;
+width: 100px;
+color:#24b438;
 border-radius: 1rem;
-border:non;
-box-shadow:rgba(0,0,0,0.6);
-font-size:8vmin;
-font-color:#b041be;
+border:none;
 
-}
 
-.reset-button{
-padding:1rem;
-    background-color:rgb(6, 6, 13);
- font-size:1rem;
- color:aquamarine;
- border-radius: 1.3rem;
+
 }
 
 
 
+#new-game{
+  background-color:rgb(25, 24, 24);
+    color:blue;
+height: 40px;
+width: 100px;
+color:#24b438;
+border-radius: 1rem;
+border:none;
+}
+#msj{
 
+    font-size:8vmin;
+
+}
+.msj-container{
+
+    height:100vmin;
+
+}
+.hide{
+   display:none;
+
+}
